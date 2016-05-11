@@ -16,13 +16,35 @@ input:focus, textarea:focus{
     background: lightgray;
 }
 
+table{
+    width: 100%;
+}
+th{
+    background: #273b47;
+    color: white;
+    text-align: left;
+    padding: 20 px;
+
+}
+td{
+    padding: 20px;
+}
+table, td, th{
+    border:1px solid #273b47;
+    border-collapse: collapse;
+}
+
+.background{
+    background-image: url('../images/background.png');
+    background-size: cover;
+}
+
 .titulo{
-    font-size: 70px;
     font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
     margin-bottom: 0;
     margin-top: 70px;
 }
-
 .title-a{
     font-size: 24px;
     margin-top: 0;
@@ -36,6 +58,7 @@ input:focus, textarea:focus{
 .contenedor{
     width: 800px;
     margin: auto;
+    position: relative;
 }
 
 .guitarras{
@@ -54,8 +77,6 @@ input:focus, textarea:focus{
 }
 
 .portada{
-    background-image: url('../images/background.png');
-    background-size: cover;
     color: white;
     padding: 20px;
     height: 500px;    
@@ -80,14 +101,13 @@ input:focus, textarea:focus{
     content: '∘';
     font-size: 35px;
     line-height: 20px;
+    color:white;
 }
 
 .menu a{
     color: white;
     text-decoration: none;
-
 }
-
 
 .logotipo{
     display: inline-block;
@@ -123,15 +143,22 @@ input:focus, textarea:focus{
 }
 .button{
     border: none;
-    border-radius: 5px;
-    background: #FD324E;
+    border-radius: 12px;
+    /*background: #FD324E;*/
     color: white;
     padding: 7px 12px;
     font-size: 18px;
-    background: linear-gradient(to left,#FE344E,#FF7250);
+    /*background: linear-gradient(to left,#FE344E,#FF7250);*/
     border-radius: 12px;
     cursor: pointer;
     text-decoration: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+    background: #f3c5bd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=0 ); /* IE6-9 */
+
 }
 .footer{
     background: #273b47;
@@ -157,6 +184,7 @@ input:focus, textarea:focus{
     width: 300px;
     flex-wrap: wrap;
     align-items: center;
+    flex-wrap: 
 }
 .formulario{
     display: flex;
@@ -185,24 +213,12 @@ input:focus, textarea:focus{
 .sexo{
     margin-top: 10px;
 }
-table{
-    width: 100%;
-}
-th{
-    background: #273b47;
-    color: white;
-    text-align: left;
-    padding: 20 px;
 
-}
-td{
-    padding: 20px;
-}
-table, td, th{
-    border:1px solid #273b47;
-    border-collapse: collapse;
-}
 .titulo span{
     text-decoration: underline;
-}
+    color: #FF7250;
 
+}
+.tabla{
+    margin: 50px 0;
+}
